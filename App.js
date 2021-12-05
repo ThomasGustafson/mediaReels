@@ -48,8 +48,10 @@ backgroundColor:"#8819E5"
 
 
 appTitle:{
-
+marginTop: 60,
 textAlign:'center',
+fontWeight:'bold',
+fontSize:24,
 
 
 },
