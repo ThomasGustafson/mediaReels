@@ -17,6 +17,39 @@ export default function App() {
 
      <View style ={styles.reelsBackground}>
 
+<Text style={styles.myReelsHeader}>My Reels</Text>
+<View style={styles.searchBar}>
+
+
+
+
+
+</View>
+
+{/* this is where the reels are going to go */}
+
+<View style={styles.myReelsContainer}>
+
+
+
+
+
+
+
+</View>
+
+
+<View style ={styles.externalReelModificationControlls}>
+
+
+
+
+
+
+
+</View>
+
+
 
 
 
@@ -39,9 +72,10 @@ const styles = StyleSheet.create({
 
 reelsWrapper: {
 
-width: 1400,
+width: 1800,
 height: 200,
-backgroundColor:"#8819E5"
+backgroundColor:"#8819E5",
+marginBottom: 700,
 
 
 },
@@ -56,9 +90,91 @@ fontSize:24,
 
 },
 
+searchBar:{
+
+width:600,
+height:40,
+marginTop: 40,
+marginLeft: 440,
+backgroundColor:'#EB927A'
 
 
 
+
+
+},
+
+
+
+
+myReelsHeader:{
+
+  marginTop: 50,
+  textAlign:'center',
+  fontWeight:'bold',
+  fontSize:22,
+  
+
+
+
+
+
+},
+
+reelsBackground:{
+
+  width: 1500,
+  height: 1000,
+  marginTop: 140 ,
+  marginLeft: 150,
+  
+  
+  backgroundColor:'#35D818'
+  
+  
+  },
+  
+
+myReelsContainer:{
+
+
+  width: 1000,
+  height: 500,
+  marginTop: 10,
+  marginLeft: 250,
+  backgroundColor:'#1892D8'
+
+
+
+
+},
+
+
+reelsBackground:{
+
+width: 1500,
+height: 1000,
+marginTop: 140 ,
+marginLeft: 150,
+
+
+backgroundColor:'#35D818'
+
+
+},
+
+externalReelModificationControlls:{
+
+width:400,
+height:100,
+marginTop: 55,
+marginLeft: 530,
+backgroundColor:'#D89818'
+
+
+
+
+},
 
 
 
