@@ -36,4 +36,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+reelsWrapper: {
+
+width: 1400,
+height: 200,
+backgroundColor:"#8819E5"
+
+
+},
+
+
+appTitle:{
+
+textAlign:'center',
+
+
+},
+
+
+
+
+
+
+
+
 });
