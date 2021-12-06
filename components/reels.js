@@ -12,13 +12,30 @@ const Reel = ()=>{
 
 
 
-
-
-
-
-
-
-
-
-
 }
+
+const styles = StyleSheet.create({
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+})
