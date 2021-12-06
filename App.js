@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -168,7 +169,7 @@ externalReelModificationControlls:{
 width:400,
 height:100,
 marginTop: 55,
-marginLeft: 530,
+marginLeft: 565,
 backgroundColor:'#D89818'
 
 
