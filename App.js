@@ -32,7 +32,7 @@ export default function App() {
 
 <View style={styles.myReelsContainer}>
 
-<Reel name = {''} text = {''}/>
+<Reel name = {'images/hidden figures.jpg'} text = {'Hidden figgures'} date = {'2016'}/>
 
 
 
@@ -140,7 +140,7 @@ reelsBackground:{
 myReelsContainer:{
 
 
-  width: 1000,
+  width: 1100,
   height: 500,
   marginTop: 10,
   marginLeft: 250,
