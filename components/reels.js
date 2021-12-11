@@ -1,6 +1,6 @@
 import React from "react";
 import{View, Text , StyleSheet,Image, TouchableOpacity, ShadowPropTypesIOS} from 'react-native';
-const Reel = ()=>{
+const Reel = (props)=>{
 
 
     return(
@@ -13,7 +13,7 @@ const Reel = ()=>{
 <View style={styles.reelLeft}>
            <View />
 
-          {/* <Image source={require('../assets/' + props.name)} style ={styles.reelImage}/> */}
+           <Image source={require('../assets/' + props.name)} style ={styles.reelImage}/> 
 
            </View>
 
@@ -22,7 +22,7 @@ const Reel = ()=>{
 
 
 
-
+<Text style = {styles.reelName}>{props.text}</Text>
 
         </View>
 
