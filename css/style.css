@@ -1,7 +1,228 @@
-label.reelName{
-    margin-left: -100;
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
 
 
+
+
+
+
+  .mediaReelsHeader{
+margin-top: -400px;
+text-align: center;
+
+
+
+  }
+
+
+
+  .myReelsHeader{
+
+
+text-align: center;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+  
+  table {
+      margin-top: 40px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 32px;
+  }
+  
+  th {
+    background-color: rgb(117, 201, 250);
+  }
+  
+  td {
+    background-color: rgb(205, 235, 253);
+  }
+  
+  form {
+    display: flex;
+    gap: 5px;
+    margin-top: -600px;
+
+   margin-bottom: -50px;
+   padding: 5px;
+   border: 2px solid #ffffff;
+   border-radius: 60px;
+  }
+  
+  form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  form * {
+    font-size: 28px;
+  }
+
+  .addStudentHeader{
+
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+
+  }
+
+
+  span.addReelSpan{
+
+    display: inline-block;
+    text-align: justify;
+    
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+#reelIdInput{
+
+position: absolute;
+left: 75px;
+top: 300px;
+
+
+
+
+}
+
+
+
+
+
+
+
+#reelYearInput{
+
+
+    position: absolute;
+    left: 525px;
+    top: 300px;
+    
+    
+    
+    
+    
+    
+    }
+
+#reelNameInput{
+
+
+position: absolute;
+left: 75px;
+top: 400px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#reelStudioInput{
+
+
+position: absolute;
+left: 525px;
+top: 400px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#reelFormatInput{
+
+
+    position: absolute;
+    left: 75px ;
+    top: 500px;
+
+
+
+
+
+
+}
+
+
+#reelNotesInput{
+  position: absolute;
+left: 525px;
+top: 500px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+#submitButton{
+position: absolute;
+left: 300px;
+top: 600px;
+margin-top: -25px;
 
 
 
@@ -11,3 +232,22 @@ label.reelName{
 
 
 }
+
+
+
+    #ResetButton{
+
+    position:absolute;
+    top: 600px;
+    left: 520px;
+    margin-top: -25px;
+   
+   
+  
+    
+    
+
+
+
+    }
+  
