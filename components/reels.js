@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import{View, Text , StyleSheet,Image, TouchableOpacity, ShadowPropTypesIOS} from 'react-native';
+
+
 const Reel = (props)=>{
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     return(
@@ -25,17 +39,18 @@ const Reel = (props)=>{
 <View>
 
 
-<Text style = {styles.reelName}>{props.text}</Text>
-<Text style= {styles.reelDate}>{props.date}</Text>
-<Text style = {styles.reelStudio}>{props.studio}</Text>
-<Text style = {styles.reelFormat}>{props.format}</Text>
+ <Text style = {styles.reelName}>{props.text}</Text>
+ <Text style= {styles.reelDate}>{props.date}</Text>
+ <Text style = {styles.reelStudio}>{props.studio}</Text>
+ <Text style = {styles.reelFormat}>{props.format}</Text>
+ <Text style = {styles.reelNotes}>{props.notes}</Text>
 
 
 
 </View>
 
 
-        </View>
+    
 
 
 
@@ -49,18 +64,20 @@ const Reel = (props)=>{
 
 
 
-    );
+    
 
 
 
+</View>
 
 
+    
 
 
-
-
+    )
 
 }
+
 
 const styles = StyleSheet.create({
 
@@ -71,10 +88,10 @@ reel:{
 backgroundColor: '#FFF',
 padding: 20,
 marginTop:50,
-borderRadius: 60,
+borderRadius: 40,
 flexDirection: 'row',
 alignItems:'center',
-justifyContent: 'space-between',
+
 
 
 
@@ -132,7 +149,8 @@ reelImage:{
 reelName:{
 
 
-    marginLeft: -800,
+    marginLeft: 50,
+    
 
 
 
@@ -141,8 +159,48 @@ reelName:{
 
 },
 
+reelDate:{
 
 
+marginLeft: 300,
+marginTop: -20,
+
+
+
+
+},
+
+reelStudio:{
+
+
+
+marginLeft: 510,
+marginTop: -20,
+
+
+
+},
+
+reelFormat:{
+
+marginLeft: 800,
+marginTop: -20,
+
+
+
+
+},
+
+reelNotes:{
+
+marginLeft: 1000,
+marginTop: -20,
+
+
+
+
+
+},
 
 
 

@@ -1,8 +1,67 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Reel from './components/reels';
+import data from "./data/data.json";
+//const [reels,setReels] = useState(data);
+// const[addFormData, setAddFormData] = useState({
+// reelImage: '', 
+//  reelId: '',
+//  reelName: '',
+//  reelYear: '',
+//  reelStudio: '',
+//  reelFormat: '',
+//  reelNotes: ''
 
+//  });
+
+
+
+
+
+
+const handleAddFormChange = (event) => {
+
+    event.preventDefault();
+  
+    const fieldName = event.target.getAttribute('name')
+    const fieldValue = event.target.value;
+  
+    const newFormData = { ...addFormData };
+    newFormData[fieldName] = fieldValue;
+  
+    setAddFormData(newFormData);
+  
+  
+  };
+  
+  
+  const handelAddFormSubmit = (event) => {
+  
+  
+    event.preventDefault();
+  
+    const newReel = {
+  
+      reelImage: addFormData.reelImage,
+      reelId: addFormData.reelId,
+      reelName: addFormData.reelName,
+      reelYear: addFormData.reelYear,
+      reelStudio: addFormData.reelStudio,
+      reelFormat: addFormData.reelFormat,
+      reelNotes: addFormData.reelNotes,
+  
+  
+  
+  
+    }
+  
+    const newReels = [...reels, newReel];
+    setReels(newReels);
+  
+  
+  
+  };
 
 export default function App() {
   return (
@@ -32,7 +91,9 @@ export default function App() {
 
 <View style={styles.myReelsContainer}>
 
-<Reel name = {'images/hidden figures.jpg'} text = {'Hidden figgures'} date = {'2016'}/>
+<Reel name = {'images/hidden figures.jpg'} text = {'Hidden figgures'} date = {'2016'} studio = {'fox searchlight pictures'} format ={'DVD'} other={'history'}/>
+
+<Reel name = {'images/Water for Elephants.jpg'} text = {'Water for Elephants '} date ={'2014'} studio = {'sony'} format = {'DVD'} notes={'rom com'}/>
 
 
 
@@ -43,6 +104,95 @@ export default function App() {
 
 <View style ={styles.externalReelModificationControlls}>
 
+<form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* will only be able to view reel id not edit */}
+<label id='reelIdLabel'>Reel Id</label>
+<input
+type= "number"
+name='reelId'
+//</form>onChange={}
+
+/>
+
+
+
+
+
+
+
+
+
+
+
+
+<label id='reelNameLabel'>Reel Name</label>
+
+<input 
+type= "text"
+name='reelName'
+
+
+
+/>
+
+
+
+<label id='reelYearLabel'>Reel Year</label>
+<input
+
+type="text"
+name='reelYear'
+
+
+/>
+
+<label id='reelStudioLabel'>Reel Label</label>
+<input 
+
+type='text'
+name='reelStudio'
+
+/>
+<label id='reelFormatLabel'>Reel Format</label>
+<input
+type='text'
+name='reelFormat'
+
+/>
+
+<label id='reelNotesLabel'> Reel Notes</label>
+<input
+type='text'
+name='reelNotes'
+
+
+
+/>
+
+
+
+</form>
+
+
+
+
+
+
+
 
 
 
@@ -50,7 +200,6 @@ export default function App() {
 
 
 </View>
-
 
 
 
@@ -72,10 +221,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+
+  // purple//
 reelsWrapper: {
 
 width: 1800,
-height: 200,
+height: 150,
 backgroundColor:"#8819E5",
 marginBottom: 700,
 
@@ -123,28 +274,26 @@ myReelsHeader:{
 
 },
 
-reelsBackground:{
 
-  width: 1500,
-  height: 1000,
-  marginTop: 140 ,
-  marginLeft: 150,
+// green//
+
+
   
   
-  backgroundColor:'#35D818'
   
-  
-  },
-  
+// blue//
+
+
 
 myReelsContainer:{
 
 
-  width: 1100,
-  height: 500,
+  width: 1500,
+  height: 1100,
   marginTop: 10,
-  marginLeft: 250,
-  backgroundColor:'#1892D8'
+  marginLeft: 200,
+  backgroundColor:'#1892D8',
+  borderRadius: 90,
 
 
 
@@ -154,8 +303,8 @@ myReelsContainer:{
 
 reelsBackground:{
 
-width: 1500,
-height: 1000,
+width: 1650,
+height: 1600,
 marginTop: 140 ,
 marginLeft: 150,
 
@@ -165,20 +314,31 @@ backgroundColor:'#35D818'
 
 },
 
+
+
+
+
+
+
+
 externalReelModificationControlls:{
 
-width:400,
-height:100,
-marginTop: 55,
-marginLeft: 565,
-backgroundColor:'#D89818'
-
-
+  width:1300,
+  height:600,
+  marginTop: 55,
+  marginLeft: 250,
+  backgroundColor:'#D89818'
 
 
 },
 
+ 
+  
+  
+  
+  
+  
 
 
-
-});
+}
+)
