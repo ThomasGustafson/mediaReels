@@ -1,7 +1,89 @@
 
+
+
+
+
 [
 
+    {
 
+        "reelId": 1,
+        "reelName": "Hidden Figures",
+        "reelYear": " 2016",
+        "reelStudio": "Fox Searchlight",
+        "reelFormat": "DVD",
+        "reelNotes": "history"
+
+
+
+
+    },
+
+
+{
+
+    "reelId": 2,
+    "reelName": "Free Guy",
+    "reelYear": " 2021",
+    "reelStudio": "Fox ",
+    "reelFormat": "DVD",
+    "reelNotes": "Funny"
+
+
+
+
+
+
+
+},
+
+
+
+{
+
+    "reelId": 3,
+    "reelName": "COCO",
+    "reelYear": " 2017",
+    "reelStudio": "Disney ",
+    "reelFormat": "DVD",
+    "reelNotes": "day of the dead film"
+
+
+
+
+
+
+
+
+
+
+},
+
+
+
+{
+
+
+    "reelId": 4,
+    "reelName": "death becomes her",
+    "reelYear": " 1992",
+    "reelStudio": "Universal Pictures ",
+    "reelFormat": "DVD",
+    "reelNotes": "He should have called a priest"
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -23,3 +105,50 @@
 
 
 ]
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
