@@ -9,6 +9,21 @@ import "../css/style.css";
 
 const Reel = ()=>{
 
+  const sqlite3 = require('sqlite3');
+
+
+
+
+
+
+  
+  
+  
+
+    console.log('Connected to the in-memort Sqlite database.');
+
+
+
     const [reels,setReels] = useState(data);
     const[addFormData, setAddFormData] = useState({ 
      
@@ -57,17 +72,40 @@ const Reel = ()=>{
       
       
         };
+
+        
       
         const newReels = [...reels, newReel];
         setReels(newReels);
       
+       
       
+
+
+
       
       };
 
     
 
 
+      function createTable() {
+    
+
+        db.serialize(() =>{
+        
+        db.run('Create Table If NOT EXISTS Reels(reelId, reelName, reelYear, reelStudio, reelFormat , reelNotes)')
+        
+        
+        }
+
+        )
+
+
+
+
+
+        function insert(reel){
 
 
 
@@ -75,6 +113,50 @@ const Reel = ()=>{
 
 
 
+          let db = new sqlite3.Database('../data/test.db');
+          
+          
+          
+           db.run(
+               
+              'INSERT INTO Reels(reelId,reelName,reelYear,reelStudio, reelFormat, reelNotes)' 
+             ,' Values',
+              (reel.reelId),
+              (reel.reelName),
+             (reel.reelYear),
+             (reel.relStudio),
+             (reel.reelFormat),
+             (reel.reelNotes),
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              function(err){
+            
+              
+          
+          
+          if(err){
+          
+          return console.log(err.message);
+          }
+          
+          console.log('a reel has been inserted sucessfully');
+          
+          })
+
+
+
+
+        }
     return(
       
 
@@ -257,7 +339,7 @@ onChange={handleAddFormChange}
 
  }
 
-
+}
  
 
  
